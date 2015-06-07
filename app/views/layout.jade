@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    meta(property="og:url", content="#{url}")
+    meta(property="og:image", content="#{img}")
+    meta(property="og:title", content="#{title}")
+    meta(property="og:description", content="#{description}")
+    meta(property="og:type", content="article")
+    block css
+      link(rel='stylesheet', href='/css/style.css')
+  body
+    block content
+
+    block js
+      script(src='/js/script.js')
+      if ENV_DEVELOPMENT
+        script(src='http://localhost:35729/livereload.js')
+

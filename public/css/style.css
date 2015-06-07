@@ -1,0 +1,230 @@
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #43434a;
+  padding: 0;
+  margin: 0;
+}
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ddd;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s ease-in;
+}
+.page.o0 {
+  opacity: 0.6;
+  transition: all 0.2s ease-out;
+}
+.page.c1 {
+  background: linear-gradient(to right, #d770ad, #ec87c0);
+}
+.page.c2 {
+  background: linear-gradient(to right, #4a89dc, #5d9cec);
+}
+.page.c3 {
+  background: linear-gradient(to right, #3bafda, #4fc1e9);
+}
+.page.c4 {
+  background: linear-gradient(to right, #37bc9b, #48cfad);
+}
+.page.c5 {
+  background: linear-gradient(to right, #8cc152, #a0d468);
+}
+.page.c6 {
+  background: linear-gradient(to right, #f6bb42, #ffce54);
+}
+.page.c7 {
+  background: linear-gradient(to right, #e9573f, #fc6e51);
+}
+.page.c8 {
+  background: linear-gradient(to right, #da4453, #ed5565);
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+h1 {
+  font-size: 120px;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 120px;
+  line-height: 120px;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s ease-in;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  padding: 0 50px;
+  vertical-align: middle;
+  line-height: 40px;
+  text-align: right;
+  z-index: 3;
+}
+.footer a {
+  vertical-align: middle;
+}
+.key {
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  opacity: 0.2;
+}
+.sharing-caring {
+  z-index: 3;
+  position: absolute;
+  right: 40px;
+}
+.textfield {
+  border: none;
+  background: transparent;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #eee;
+  text-align: right;
+  padding: 0;
+  width: 240px;
+  position: absolute;
+  right: 50px;
+  line-height: 40px;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s ease-in;
+}
+.textfield:focus {
+  outline: 0;
+}
+.textfield.active {
+  opacity: 1;
+  right: 130px;
+}
